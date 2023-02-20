@@ -1,0 +1,252 @@
+.home-icon {
+    font-size: 32px;
+}
+
+.welcome-container{
+    margin-top: 12px;
+    text-align: center;
+}
+.welcome-text{
+    color: white;
+   
+}
+
+.loggedIn-username {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin-top: 26px;
+}
+.menu-btn {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.review-image-box {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px #581206;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+
+.preview-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.centerMain {
+    margin: -40px 0 40px 0;
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+.submit-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: c;
+}
+
+.submit-btn {
+    width: 90px;
+    height: 60px;
+    font-size: 24px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.upload-image {
+    width: 500px;
+    border: 3px solid #581206;
+    border-radius: 20px;
+    color: #581206;
+    font-size: 22px;
+}
+
+.upload-image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-title {
+    font-size: 20px;
+    color: #581206;
+    font-weight: bold;
+}
+
+.input-area {
+    font-size: 22px;
+    resize: none;
+    border: 3px solid #581206;
+    border-radius: 20px;
+}
+
+.form-select {
+    border: 3px solid #581206;
+    border-radius: 20px;
+    color: #581206;
+    font-size: 22px;
+}
+
+input[type=file]::file-selector-button {
+    background-color: #bb513f8e;
+    color: #581206;
+  
+  }
+
+
+.thank-statement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #581206;
+    margin-bottom: 20px;
+}
+
+.ai-statement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #db2222ce;
+}
+
+#ai-rest-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 40px 0;
+}
+
+.ai-rest-container {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px #581206;
+    margin: 25px;
+}
+
+.ai-rest-container:hover {
+    
+    cursor: pointer;
+    background-color: rgba(250, 235, 215, 0.901);
+}
+
+.image-container {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+.rest-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.name-mtr-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ai-price-cat-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ai-rating-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rest-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: #581206;
+    font-weight: bold;
+
+}
+
+.rest-address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding:12px
+}
+
+.ai-title {
+    margin: 6px;
+    font-size: 18px;
+}
+
+.fa-solid {
+    margin-right: 5px;
+}
+
+html,body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    padding-bottom: 100px; 
+}
+
+.centerMain {
+   
+    min-height: 100%; 
+    margin-bottom: 50px; 
+}
+
+footer{
+    height: 50px;
+    background-color: #581206;
+  }
+
+  .logo-container {
+    width: 80px;
+    height: 80px;
+  }
+
+  .company-logo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .company-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }

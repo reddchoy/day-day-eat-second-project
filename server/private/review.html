@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/otherPrivate.css" />
+  <link rel="stylesheet" href="./css/review.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="wholePage">
+    <div id="header">
+
+    </div>
+    <div id="midContent">
+      <div class="leftSpace"></div>
+      <div class="centerMain">
+        <div id="review-container" class="container" style="width: 50vw; margin-top: 15vh">
+          <form method="post" id="form-user-review">
+            <div class="review-image-box">
+              <img src="" alt="" class="preview-image" />
+            </div>
+            <div class="mb-3">
+              <div class="upload-image-container">
+                <div class="form-title">
+                  餐廳的食物 / 環境照片
+                </div>
+                <label for="review-pic" class="col-form-label"></label>
+                <input type="file" class="form-control upload-image" name="review_pic" accept="image/png, image/jpeg"
+                  onchange="loadFile(event)" />
+              </div>
+            </div>
+            <div class="mb-3 input-container">
+              <textarea class="form-control input-area" name="review_content" placeholder="在此輸入你對餐廳的感想" id="textarea"
+                style="height: 200px"></textarea>
+            </div>
+            <div class="mb-3"></div>
+            <div class="bottom-container">
+              <div class="rating-container">
+                <div class="food-rating">
+                  <label for="review-pic" class="col-form-label form-title">食物評分</label>
+                  <select class="form-select" id="food-rating-select" name="food_rating">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <div class="env-rating">
+                  <label for="review-pic" class="col-form-label form-title">環境評分</label>
+                  <select class="form-select" id="restaurant-rating-select" name="restaurant_rating">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="submit-btn-container">
+                <input type="submit" class="btn btn-primary submit-btn" data-bs-toggle="modal"
+                  data-bs-target="#reviewModal" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <h1 id="thanks-container" style="display: none">???</h1>
+      </div>
+      <div class="rightSpace"></div>
+    </div>
+    <div class="theCanvas">
+      <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div id="content-container">
+          <div class="offcanvas-header">
+            <div class="offCanHeadClose">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="offcanvas-body">
+            <div id="canvasLeft">
+              <div class="profilePicDiv">
+                <img class="profilePic" src="../images/userPic/default-profile-pic.png" />
+              </div>
+              <div class="VL"></div>
+              <div class="settingIcon"><i class="bi bi-gear"></i></div>
+            </div>
+            <div id="canvasRight">
+              <div id="canvasContentOne">
+                <div class="username">
+                  <hr />
+                </div>
+              </div>
+              <div id="canvasContentTwo">
+                <div id="profileink">
+                  <a href="./profile.html">個人資料</a>
+                </div>
+                <div id="likedRecord">
+                  <a href="./likedRecord.html">收藏紀錄</a>
+                </div>
+                <div id="reviewRecord">
+                  <a href="./reviewRecord.html">食評紀錄</a>
+                </div>
+              </div>
+              <div id="canvasContentThree">
+                <div class="logout">
+                  登出
+                  <hr />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footerContainer"></footer>
+
+
+  <div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="reviewModalLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="thank-statement">
+
+          </div>
+          <div class="ai-statement">
+
+          </div>
+        </div>
+        <div id="ai-rest-area">
+
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="./js/utils.js"></script>
+  <script src="./js/review.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+body{
+    min-height: 100vh;
+}
+#wholePage {
+    display: flex;
+    flex-direction: column;
+    min-height:100%;
+
+}
+#header {
+    width: 100%;
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #581206;
+}
+.functionArea {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.home-icon {
+    font-size: 32px;
+}
+
+.welcome-container{
+    margin-top: 12px;
+    text-align: center;
+}
+.welcome-text{
+    color: white;
+   
+}
+
+.loggedIn-username {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin-top: 26px;
+}
+.menu-btn {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+
+.btn-primary {
+    --bs-btn-color: #f9f7f0;
+    --bs-btn-bg: #581206;
+    --bs-btn-border-color:#581206;
+    --bs-btn-hover-color: #f9f7f0;
+    --bs-btn-hover-bg:#581206;
+    --bs-btn-hover-border-color:#581206;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #f9f7f0;
+    --bs-btn-active-bg:#581206;
+    --bs-btn-active-border-color:#581206;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color:#f9f7f0;
+    --bs-btn-disabled-bg:#581206;
+    --bs-btn-disabled-border-color:#581206;
+    
+}
+/* #######################**MidContent**######################### */
+#midContent{
+position: relative;
+display: flex;
+
+min-height: 100%; 
+margin-bottom: -50px; 
+}
+.leftSpace {
+    width: 15%;
+}
+.rightSpace {
+    width: 15%;
+}
+.centerMain{
+    /* border: 1px solid black; */
+    width: 70%;
+    padding-bottom: 50px; 
+}
+.midHeader {
+    display: flex;
+}
+
+.detailProfilePic {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;margin: 10px;
+}
+.detailName {
+    margin-top: 20px;
+}
+.centerContent {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 200px;
+
+    /* border: 1px solid; */
+}
+.restaurant{
+    border: 2px solid #581206;
+    border-radius: 10px;
+    background-color:#e8d2ce;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    margin: 10px;
+    padding: 10px;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+.restaurant:hover{
+    opacity: 1.1
+}
+.likedRestImg {
+    width: 50%;
+}
+.restaurantInfo{
+    display: flex;
+    flex-direction: column;
+}
+.restaurantName{
+    font-size: medium;
+    color: black;
+    font-weight: bold;
+}
+.scoreAndCounter {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+.address {
+    font-size: small;
+}
+.price {
+    font-size: small;
+}
+.phoneNumber {
+    font-size: small;
+}
+.restStyle {
+    font-size: small;
+}
+.foodRating {
+    display:flex;
+    flex-direction: row;
+}
+.foodRatingValue{
+    margin-left: 5px;
+}
+.envRating{
+    display:flex;
+    flex-direction: row;
+}
+.envRatingValue{
+    margin-left: 5px;
+}
+.deleteLikeBtn{
+    border: 0px;
+    border-radius: 5px;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+.deleteLikeBtn:hover{
+    background-color: #ff8b77;
+    opacity: 1.1
+}
+.deleteReviewBtn{
+    border: 0px;
+    border-radius: 5px;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+.deleteReviewBtn:hover{
+    background-color: #ff8b77;
+    opacity: 1.1
+}
+.commentAndAIImage{
+    display: flex;
+}
+.commentAIImage {
+    height: 100px;
+}
+.commentBox{
+    border: 2px solid #581206;
+    background-color:rgba(250, 235, 215, 0.4) ;
+    border-radius: 10px;
+    width: 100%;
+    margin: 20px;
+}
+.vcAndRating {
+    display: flex;
+    justify-content: space-between;
+}
+.comment {
+    width: 70%;
+    margin: 10px;
+}
+.restNameAndTag{
+    display: flex;
+}
+.restaurantTag{
+    background-color:#a77c74;
+    font-size: small;
+    color:#f9f7f0;
+    padding:2px;
+    border-radius: 10px;
+}
+.commentDate{
+    font-size: smaller;
+}
+/* #######################**MidContent**######################### */
+/* #######################**Canvas**######################### */
+.theCanvas{
+    display: flex;
+    flex-direction: row;
+}
+.offcanvas {
+    --bs-offcanvas-width:400px;
+    flex-direction: row;
+    }
+
+.offcanvas-body {
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f9f7f0;
+    flex-direction: row;
+}
+#content-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.offcanvas-header {
+    flex-direction: row-reverse;
+    background-color: #581206;
+    height: 7%;
+}
+/* .VL {
+    border-left: 2px solid #581206;
+    height: 400px;
+} */
+#canvasLeft{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.profilePicDiv{
+    width: 30px;
+}
+.profilePic {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+#canvasRight {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#canvasContentOne {
+    display: flex;
+    flex-direction: row;
+}
+.username {
+    width: 100%;
+}
+#canvasContentTwo{
+    display: flex;
+    flex-direction: column;
+}
+#canvasContentThree {
+    display: flex;
+    flex-direction: row;
+}
+.logout {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: pink;
+}
+a:hover{
+    color: pink;
+}
+/* #######################**Canvas**######################### */
+
+
+html,body {
+    height: 100%;
+    margin: 0;
+}
+
+
+footer{
+    height: 50px;
+    background-color: #581206;
+  }
+
+  .logo-container {
+    width: 80px;
+    height: 80px;
+  }
+
+  .company-logo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .company-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }

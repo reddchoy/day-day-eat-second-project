@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/restaurant-details.css">
+  <title>Restaurant Details</title>
+</head>
+
+<body>
+  <div id="header">
+  </div>
+
+  <div id="content-area" class="container">
+    <div class="col-md-4" id="restaurant-area">
+    </div>
+
+    <div class="col-md-8" id="details-area">
+      <div class="details-container">
+
+      </div>
+
+      <div class="review-container">
+
+      </div>
+    </div>
+  </div>
+  <div class="theCanvas">
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+      id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      <div id="content-container">
+        <div class="offcanvas-header">
+          <div class="offCanHeadClose">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="offcanvas-body">
+          <div id="canvasLeft">
+            <div class="profilePicDiv">
+              <img class="profilePic" src="../userPic/default-profile-pic.png" />
+            </div>
+            <div class="VL"></div>
+            <div class="settingIcon"><i class="bi bi-gear"></i></div>
+          </div>
+          <div id="canvasRight">
+            <div id="canvasContentOne">
+              <div class="username">
+                請登入
+                <hr />
+              </div>
+            </div>
+            <div id="canvasContentTwo">
+              <div style="font-size:medium;">
+                登入後才能使用
+              </div>
+            </div>
+            <div id="user-profile">
+              <div style="font-size:medium;">
+                個人資料
+              </div>
+            </div>
+            <div id="like-record">
+              <div style="font-size:medium;">
+                收藏紀錄
+              </div>
+            </div>
+            <div id="review-record">
+              <div style="font-size:medium;">
+                食評紀錄
+              </div>
+            </div>
+            <div id="canvasContentThree">
+              <div class="logout">
+                登出
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footerContainer"></footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+    integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/utils.js"></script>
+  <script src="./js/restaurant-details.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/restaurants.css">
+
+    <title>Restaurant</title>
+</head>
+
+<body>
+    <div id="header">
+    </div>
+    <div id="content-box" class="container">
+        <div class="col-md-4 search-area">
+            <div class="search-box">
+                <div class="food-searh">
+                    <div class="container1" style="display: flex; justify-content: space-between;">
+                        <div class="search-title">
+                            食品類型
+                        </div>
+                        <div class="all" style="margin-bottom: 15px;">
+                            所有餐廳
+                        </div>
+                    </div>
+                    <div class="food-cat-layer">
+                        <div class="sushi-cat">
+                            壽司/刺身
+                        </div>
+                        <div class="noodle-cat">
+                            拉麵/烏冬
+                        </div>
+                        <div class="tempura-cat">
+                            天婦羅/炸物
+                        </div>
+                        <div class="curry-cat">
+                            咖哩
+                        </div>
+                        <div class="nabe-cat">
+                            涮涮鍋/壽喜燒
+                        </div>
+                        <div class="yakiniku-cat">
+                            烤肉/串燒
+                        </div>
+                        <div class="don-cat">
+                            丼飯
+                        </div>
+                        <div class="other-cat">
+                            其他
+                        </div>
+                    </div>
+                </div>
+                <div class="location-searh">
+                    <div class="search-title">
+                        位置
+                    </div>
+                    <div class="district-cat">
+                        <div class="kowloon-cat distict-text">
+                            九龍
+                        </div>
+                        <div class="kl layer-1 ">
+                            <div class="mongkok">
+                                旺角
+                            </div>
+                            <div class="yau-ma-tei">
+                                油麻地
+                            </div>
+                            <div class="tsim-sha-tsui">
+                                尖沙咀
+                            </div>
+                            <div class="jordan">
+                                佐敦
+                            </div>
+                            <div class="prince-edward">
+                                太子
+                            </div>
+                            <div class="sha-shui-po">
+                                深水埗
+                            </div>
+                        </div>
+                        <div class="kl layer-2 ">
+                            <div class="lai-chi-kok">
+                                荔枝角
+                            </div>
+                            <div class="cheung-sha-wan">
+                                長沙灣
+                            </div>
+                            <div class="mei-foo">
+                                美孚
+                            </div>
+                            <div class="ho-man-tin">
+                                何文田
+                            </div>
+                            <div class="whampoa">
+                                黃埔
+                            </div>
+                            <div class="shek-kip-mei">
+                                石硤尾
+                            </div>
+                        </div>
+                        <div class="kl layer-3 ">
+                            <div class="wong-tai-sin">
+                                黃大仙
+                            </div>
+                            <div class="diamond-hill">
+                                鑽石山
+                            </div>
+                            <div class="choi-hung">
+                                彩虹
+                            </div>
+                            <div class="kowloon-bay">
+                                九龍灣
+                            </div>
+                            <div class="ngau-tau-kok">
+                                牛頭角
+                            </div>
+                            <div class="kwun-tong">
+                                觀塘
+                            </div>
+                        </div>
+                    </div>
+                    <div class="district-cat">
+                        <div class="new-territories-cat distict-text">
+                            新界
+                        </div>
+                        <div class="nt layer-1 ">
+                            <div class="shatin">
+                                沙田
+                            </div>
+                            <div class="taiwai">
+                                大圍
+                            </div>
+                            <div class="taipo">
+                                大埔墟
+                            </div>
+                            <div class="fotan">
+                                火炭
+                            </div>
+                            <div class="fanling">
+                                粉嶺
+                            </div>
+                            <div class="sheung-shui">
+                                上水
+                            </div>
+                        </div>
+                        <div class="nt layer-2 ">
+                            <div class="tsuen-wan">
+                                荃灣
+                            </div>
+                            <div class="tsuen-wan-west">
+                                荃灣西
+                            </div>
+                            <div class="kwai-fong">
+                                葵芳
+                            </div>
+                            <div class="tuen-mun">
+                                屯門
+                            </div>
+                            <div class="tin-shui-wai">
+                                天水圍
+                            </div>
+                            <div class="yuen-long">
+                                元朗
+                            </div>
+                        </div>
+                        <div class="nt layer-3 ">
+                            <div class="tsing-yi">
+                                青衣
+                            </div>
+                            <div class="tung-chung">
+                                東涌
+                            </div>
+                            <div class="ma-on-shan">
+                                馬鞍山
+                            </div>
+                            <div class="shek-mun">
+                                石門
+                            </div>
+                            <div class="city-one">
+                                第一城
+                            </div>
+                            <div class="sha-tin-wai">
+                                沙田圍
+                            </div>
+                        </div>
+                    </div>
+                    <div class="district-cat">
+                        <div class="hong-kong-island-cat distict-text ">
+                            港島
+                        </div>
+                        <div class="hk layer-1 ">
+                            <div class="admiralty">
+                                金鐘
+                            </div>
+                            <div class="central">
+                                中環
+                            </div>
+                            <div class="sheung-wan">
+                                上環
+                            </div>
+                            <div class="kennedy-town">
+                                堅尼地城
+                            </div>
+                            <div class="wan-chai">
+                                灣仔
+                            </div>
+                            <div class="causeway-bay">
+                                銅鑼灣
+                            </div>
+                        </div>
+                        <div class="hk layer-2 ">
+                            <div class="tin-hau">
+                                天后
+                            </div>
+                            <div class="fortress-hill">
+                                炮台山
+                            </div>
+                            <div class="north-point">
+                                北角
+                            </div>
+                            <div class="quarry-bay">
+                                鰂魚涌
+                            </div>
+                            <div class="tai-koo">
+                                太古
+                            </div>
+                            <div class="shau-kei-wan">
+                                筲箕灣
+                            </div>
+                        </div>
+                        <div class="hk layer-3 ">
+                            <div class="sai-wan-ho">
+                                西灣河
+                            </div>
+                            <div class="chai-wan">
+                                柴灣
+                            </div>
+                            <div class="wong-chuk-hang">
+                                黃竹坑
+                            </div>
+                            <div class="sai-ying-pun">
+                                西營盤
+                            </div>
+                            <div class="lei-tung">
+                                利東
+                            </div>
+                            <div class="heng-fa-chuen">
+                                杏花邨
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-searh">
+                    <div class="search-title">
+                        人均消費
+                    </div>
+                    <div class="price-layer">
+                        <div class="price-cat price-button-1">
+                            $50 或以下
+                        </div>
+                        <div class="price-cat price-button-2">
+                            $51 - $100
+                        </div>
+                    </div>
+                    <div class="price-layer">
+                        <div class="price-cat price-button-3">
+                            $101 - $200
+                        </div>
+                        <div class="price-cat price-button-4">
+                            $201 - $400
+                        </div>
+                    </div>
+                    <div class="price-layer">
+                        <div class="price-cat price-button-5">
+                            $401 或以上
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8" id="restaurant-area">
+        </div>
+    </div>
+
+     <div class="theCanvas">
+        <div
+          class="offcanvas offcanvas-end"
+          data-bs-scroll="true"
+          data-bs-backdrop="false"
+          tabindex="-1"
+          id="offcanvasScrolling"
+          aria-labelledby="offcanvasScrollingLabel"
+        >
+          <div id="content-container">
+            <div class="offcanvas-header">
+              <div class="offCanHeadClose">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+            </div>
+            <div class="offcanvas-body">
+       
+              <div id="canvasLeft">
+     
+                <div class="profilePicDiv">
+                  <img class="profilePic" src="../userPic/default-profile-pic.png" />
+                </div>
+                <div class="VL"></div>
+   
+                <div class="settingIcon"><i class="bi bi-gear"></i></div>
+              </div>
+     
+              <div id="canvasRight">
+                <div id="canvasContentOne">
+
+                  <div class="username">
+                    請登入
+                    <hr />
+                  </div>
+                </div>
+                <div id="canvasContentTwo">
+                  <div style="font-size:medium;">
+                    登入後才能使用
+                  </div>
+                </div>
+                <div id="user-profile">
+                  <div style="font-size:medium;">
+                    個人資料
+                  </div>
+                </div>
+                <div id="like-record">
+                  <div style="font-size:medium;">
+                    收藏紀錄
+                  </div>
+                </div>
+                <div id="review-record">
+                  <div style="font-size:medium;">
+                    食評紀錄
+                  </div>
+                </div>
+                <div id="canvasContentThree">
+     
+                  <div class="logout">
+                    登出
+                    <hr />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div id="test"></div>
+    </div>
+    <footer id="footerContainer"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/restaurants.js"></script>
+
+</body>
+
+</html>

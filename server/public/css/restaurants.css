@@ -1,0 +1,439 @@
+#header {
+    width: 100%;
+    min-height: 5vh;
+    border: 1px solid #f9f7f0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #581206;
+}
+
+
+.btn-primary {
+    --bs-btn-color: #f9f7f0;
+    --bs-btn-bg: #581206;
+    --bs-btn-border-color:#581206;
+    --bs-btn-hover-color: #f9f7f0;
+    --bs-btn-hover-bg:#581206;
+    --bs-btn-hover-border-color:#581206;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #f9f7f0;
+    --bs-btn-active-bg:#581206;
+    --bs-btn-active-border-color:#581206;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color:#f9f7f0;
+    --bs-btn-disabled-bg:#581206;
+    --bs-btn-disabled-border-color:#581206;
+    
+}
+
+
+.functionArea {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.login-btn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.login {
+    font-size: 20px;
+}
+
+.home-icon {
+    font-size: 32px;
+}
+
+.welcome-container{
+    margin-top: 12px;
+    text-align: center;
+}
+.welcome-text{
+    color: white;
+   
+}
+
+.loggedIn-username {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin-top: 26px;
+}
+.menu-btn {
+    font-size: 22px;
+}
+
+#content-box {
+    display: flex;
+}
+
+
+.search-area {
+   margin-top: 40px;
+   margin-bottom: 40px;
+}
+
+.search-box {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px 0px #5812068f;
+    padding: 12px;
+}
+
+.search-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #581206;
+    width: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    border: 2px solid #58120683;
+    border-radius: 20px;
+    margin: 20px 0 10px 0;
+    
+}
+
+
+.food-cat-layer  > div {
+    height: 40px;
+
+}
+
+.food-cat-layer:hover{
+    cursor: pointer;
+}
+
+.all:hover{
+    cursor: pointer;
+}
+
+.nt {
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+}
+
+.kl {
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+}
+.kl :hover{
+    cursor: pointer;
+}
+
+.hk {
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+}
+.hk :hover{
+    cursor: pointer;
+}
+
+.nt :hover{
+    cursor: pointer;
+}
+.price-layer :hover{
+    cursor: pointer;
+}
+
+
+.distict-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #581206c2;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    
+}
+
+
+
+.price-layer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+}
+
+.price-cat {
+    width:175px
+}
+
+#restaurant-area {
+    margin-top: 40px;
+    margin-left: -50px;
+}
+
+.restaurant-container {
+    width: 100%;
+    height: 300px;
+    background-color: #58120637;
+    display: flex;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+}
+
+.rest-box {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rest-box:hover {
+    cursor: pointer;
+    background-color: #f7a29337;
+    border-radius: 20px;
+}
+
+.image-container {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.rest-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.info-container {
+    width: 500px;
+    height: 300px;
+    margin-top: 45px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.info-container > div {
+    height: 63.5px;
+    /* background-color: #eeeeee; */
+    display: flex;
+    
+    align-items: center;
+}
+
+.rest-name {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.rest-address{
+    display: flex;
+}
+
+.rest-price {
+    display: flex;
+}
+
+.rest-food-cat{
+    display: flex;
+}
+
+
+
+.address-icon {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.price-icon {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-icon {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-text {
+    margin-right: 30px;
+}
+
+.food-rating-icon {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.env-rating-icon {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rest-rating {
+    display: flex;
+    width: 300px;
+}
+
+.rating-text {
+    margin-left: 12px;
+    margin-right: 80px;
+}
+
+.like-btn-container {
+    width: 170px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.like-btn {
+    height: 50px;
+    width: 50px;
+    border: 3px solid #581206;
+    border-radius: 50px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #581206bb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.all {
+    font-size: 22px;            
+    font-weight: bold;
+    color: #581206;
+}
+
+html,body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    min-height: 100%; 
+    margin-bottom: -50px; 
+}
+
+#restaurant-area {
+    padding-bottom: 50px; 
+}
+
+footer{
+    height: 50px;
+    background-color: #581206;
+  }
+
+  /* #######################**Canvas**######################### */
+.theCanvas{
+    display: flex;
+    flex-direction: row;
+}
+.offcanvas {
+    --bs-offcanvas-width:400px;
+    flex-direction: row;
+    }
+
+.offcanvas-body {
+    display: flex;
+    border: 1px solid #f9f7f0;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f9f7f0;
+    flex-direction: row;
+}
+#content-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.offcanvas-header {
+    border: 1px solid #f9f7f0;
+    flex-direction: row-reverse;
+    background-color: #581206;
+    height: 6.2vh;
+}
+/* .VL {
+    border-left: 2px solid #581206;
+    height: 400px;
+} */
+#canvasLeft{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.profilePic {
+    width: 30px;
+    /* height: 20vh; */
+}
+#canvasRight {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#canvasContentOne {
+    display: flex;
+    flex-direction: row;
+}
+.username {
+    width: 100%;
+}
+#canvasContentTwo{
+    display: flex;
+    flex-direction: column;
+}
+#canvasContentThree {
+    display: flex;
+    flex-direction: row;
+}
+.logout {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: pink;
+}
+a:hover{
+    color: pink;
+}
+/* #######################**Canvas**######################### */
+
+.logo-container {
+    width: 80px;
+    height: 80px;
+  }
+
+  .company-logo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .company-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
